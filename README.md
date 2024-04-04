@@ -13,4 +13,6 @@ might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$
 
+$O(\log_{2} n) = O(\log_{2} n)$
 $O(\log_{2} n) \implies \exists c, n_0: T(n) \le c\log_{2}(n)$
+$O(\log_{5} n) \implies \exists c, n_0: T(n) \le c\log_{5}(n)$
