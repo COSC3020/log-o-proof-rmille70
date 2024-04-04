@@ -22,6 +22,6 @@ $= \exists c, n_0: T(n) \le c\frac{\log(n)}{\log(5)} \forall n \ge n_0$   {by pr
 $= \exists c, n_0: T(n) \le \frac{c\log(n)}{\log(5)} \forall n \ge n_0$   {multiply c into fraction}
 $= \exists c, n_0: T(n) \le \log(n) \frac{c}{\log(5)} \forall n \ge n_0$   {factor out $\log(n)$ }
 
-Since $c$ is just some constant, $c$ multiplied by a constant is still a constant. So $\frac{c}{\log(2)}$ and $\frac{c}{\log(5)}$ are also both constants since $\log(2)$ and $\log(5)$ are constants. Thus $O(\log_{2}(2))$ is logically equivilant $O(\log_{5}(n))$ Q.E.D.
+Since $c$ is just some constant, $c$ multiplied by a constant is still a constant. So $\frac{c}{\log(2)}$ and $\frac{c}{\log(5)}$ are also both constants since $\log(2)$ and $\log(5)$ are constants. Thus $O(\log_{2}(n))$ is logically equivilant $O(\log_{5}(n))$ Q.E.D.
 
 Referenced: https://www.efunda.com/math/exp_log/log_relation.cfm for properties of logarithms
