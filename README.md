@@ -17,4 +17,5 @@ $O(\log_{2} n) = O(\log_{5} n)$
 $\implies \exists c, n_0: T(n) \le c\log_{2}(n) = \exists c, n_0: T(n) \le c\log_{5}(n)$
 
 $= \exists c, n_0: T(n) \le c\log_{2}(n) \forall n \ge n_0$
+
 $= \exists c, n_0: T(n) \le c\frac{\log(n)}{\log(2)} \forall n \ge n_0$
