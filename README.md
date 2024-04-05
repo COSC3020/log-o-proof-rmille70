@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fbkbKZ5N)
 # Asymptotic Equivalences
 
 In the lectures, we said that logarithms with different bases don't affect the
@@ -11,3 +12,23 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$
+
+$T(n) \in O(\log_{2} n) \iff \exists c, n_0: T(n) \le c\log_{2}(n) \forall n \ge n_0$   {big-oh where $f(n) = \log_{2}(n)$}
+
+$\implies \exists c, n_0: T(n) \le c\frac{\log(n)}{\log(2)} \forall n \ge n_0$   {by properties of logarithms}
+
+$\implies \exists c, n_0: T(n) \le \frac{c\log(n)}{\log(2)} \forall n \ge n_0$   {multiply c into fraction}
+
+$\implies \exists c, n_0: T(n) \le \log(n) \frac{c}{\log(2)} \forall n \ge n_0$   {factor out $\log(n)$ }
+
+$T(n) \in O(\log_{5} n) \iff \exists c, n_0: T(n) \le c\log_{5}(n) \forall n \ge n_0$   {big-oh where $f(n) = \log_{5}(n)$}
+
+$\implies \exists c, n_0: T(n) \le c\frac{\log(n)}{\log(5)} \forall n \ge n_0$   {by properties of logarithms}
+
+$\implies \exists c, n_0: T(n) \le \frac{c\log(n)}{\log(5)} \forall n \ge n_0$   {multiply c into fraction}
+
+$\implies \exists c, n_0: T(n) \le \log(n) \frac{c}{\log(5)} \forall n \ge n_0$   {factor out $\log(n)$ }
+
+Since $c$ is just some constant, $c$ multiplied by a constant is still a constant. So $\frac{c}{\log(2)}$ and $\frac{c}{\log(5)}$ are also both constants since $\log(2)$ and $\log(5)$ are constants. Thus $O(\log_{2}(n))$ is logically equivilant $O(\log_{5}(n))$ Q.E.D.
+
+Referenced: https://www.efunda.com/math/exp_log/log_relation.cfm for properties of logarithms
